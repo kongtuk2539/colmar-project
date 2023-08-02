@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'REM', sans-serif;
+}
+
+/* header navbar on windows */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 64px;
+    margin: 0 24px;
+}
+
+div.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div.logo img {
+    width: 45px;
+}
+
+nav p {
+    color: #ABABAB;
+    font-size: 32px;
+}
+
+nav span {
+    color: #2E2E2E;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+    font-size: 24px;
+}
+
+ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+ul.on-phone {
+    display: none;
+}
+
+/* header navbar on phone */
+
+@media screen and  (max-width:768px) {
+
+    ul.on-windows {
+        display: none;
+    }
+
+    ul.on-phone {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    ul.on-phone img {
+        width: 35px;
+    }
+
+    div.logo {
+        display: none;
+    }
+}
