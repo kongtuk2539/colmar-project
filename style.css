@@ -261,6 +261,7 @@ div.text-info a:hover {
 
     div.card-content-info {
         width: 100%;
+        border-bottom: 1.5px solid #dfdede;
     }
 
     div.card-info img.on-windows {
@@ -275,5 +276,203 @@ div.text-info a:hover {
     div.card-info div.text-info {
         padding-top: 16px;
         padding-left: 16px;
+    }
+}
+
+/* main content section course on windows */
+section.course {
+    display: flex;
+    flex-direction: column;
+    background-color: #dfdede;
+}
+
+section.course h2 {
+    padding: 32px;
+    font-weight: bold;
+    font-size: 48px;
+    text-align: center;
+}
+
+div.box-card {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 0 72px 32px 72px;
+    width: 100%;
+}
+
+div.card-course img {
+    width: 100%;
+}
+
+div.card-course {
+    background-color: #ffffff;
+}
+
+div.card-course:hover {
+    cursor: pointer;
+}
+
+div.course-des {
+    padding: 16px 16px 24px 16px;
+}
+
+div.course-des h3, p {
+    margin-bottom: 8px;
+}
+
+div.course-des p {
+    font-size: 18px;
+    color: #8a8a8a;
+}
+
+div.course-des p.course-text {
+    font-size: 24px;
+}
+
+div.course-des h3 {
+    font-size: 28px;
+    color: #2e2e2e;
+}
+
+/* main content section course on phone */
+@media screen and (max-width: 768px) { 
+    section.course {
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        margin-bottom: 32px;
+    }
+
+    section.course h2 {
+        padding: 32px 0 16px 0;
+    }
+
+    div.card-course {
+        background-color: #dfdede;
+        margin: 4px 8px;
+    }
+
+    div.card-course img {
+        display: none;
+    }
+
+    div.course-des p {
+        display: none;
+    }
+
+    div.course-des h3 {
+        padding: 16px 16px 24px 16px;
+    }
+
+    div.box-card {
+        flex-direction: column;
+        padding: 0px;
+        gap: 0;
+        width: 100%;
+    }
+
+    div.course-des {
+        padding: 0;
+    }
+}
+
+/* main content section thesis on windows */
+section.thesis {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+section.thesis header {
+    padding: 32px;
+    text-align: center;
+    font-size: 38px;
+}
+
+div.body-thesis {
+    display: flex;
+}
+
+div.thesis-main {
+    width: 60%;
+    padding: 0 24px 32px 24px;
+}
+
+div.thesis-main video {
+    width: 100%;
+}
+
+div.thesis-main h2 {
+    margin-top: 24px;
+    font-size: 34px;
+    color: #595959;
+}
+
+div.thesis-main p {
+    margin-top: 8px;
+    font-size: 18px;
+    color: #929292;
+}
+
+div.card-thesis-content {
+    display: flex;
+    flex-direction: column;
+    width: 40%; 
+}
+
+div.thesis-card {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+div.thesis-card img {
+    width: 35%;
+}
+
+div.text-thesis {
+    padding-left: 16px;
+}
+
+div.text-thesis h3 {
+    font-size: 26px;
+}
+
+div.text-thesis p {
+    font-size: 22px;
+    color: #929292;
+}
+
+div.thesis-card:hover {
+    background-color: #dfdede;
+    cursor: pointer;
+}
+
+/* main content section thesis on phone */
+@media screen and (max-width: 768px) {
+    section.thesis header {
+        padding: 32px 0 16px 0;
+        text-align: center;
+        font-size: 38px;
+        border-top: 1.5px solid #dfdede;
+    }
+
+    div.thesis-main h2, p {
+        display: none;
+    }
+
+    div.thesis-main {
+        width: 100%;
+        padding: 0;
+    }
+
+    div.thesis-main video {
+        width: 100%;
+        padding: 16px 0 24px 0;
+    }
+
+    div.card-thesis-content {
+        display: none;
     }
 }
