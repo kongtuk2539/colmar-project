@@ -149,6 +149,10 @@ section.hero a:hover {
     padding: 32px 16px;
   }
 
+  .content-hero p {
+    display: block;
+  }
+
   section.hero a {
     width: 100%;
   }
@@ -156,323 +160,399 @@ section.hero a:hover {
 
 /* main content section information on windows */
 div.card-info img.on-phone {
-    display: none;
+  display: none;
 }
 
 section.information {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 /* main content */
 div.main-content-info {
-    padding: 32px 24px;
+  padding: 32px 24px;
+  padding-bottom: 0;
 }
 
 div.main-content-info img {
-    width: 100%;
+  width: 100%;
 }
 
 div.main-content-info h2 {
-    margin-top: 32px;
-    font-size: 38px;
-    color: #595959;
+  margin-top: 32px;
+  font-size: 38px;
+  color: #595959;
 }
 
 div.main-content-info p {
-    margin: 24px 0 32px 0;
-    font-size: 18px;
-    color: #595959;
+  margin: 24px 0 32px 0;
+  font-size: 18px;
+  color: #595959;
 }
 
 div.main-content-info p.name {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 /* card content */
 div.card-content-info {
-    border-left: 1.5px solid #dfdede;
-    display: flex;
-    flex-direction: column;
-    padding-top: 16px;
-    width: 40%;
+  border-left: 1.5px solid #dfdede;
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  width: 40%;
 }
 
 div.card-info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 16px;
-    border-bottom: 1.5px solid #dfdede;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1.5px solid #dfdede;
 }
 
 div.card-info:hover {
-    background-color: #dfdede;
-    cursor: pointer;
+  background-color: #dfdede;
+  cursor: pointer;
 }
 
 div.card-info img.on-windows {
-    width: 35%;
-    height: auto;
+  width: 35%;
+  height: auto;
 }
 
 div.card-info div.text-info {
-    padding-left: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    font-size: 18px;
-    color: #595959;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 18px;
+  color: #595959;
 }
 
 div.text-info h3 {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 div.text-info a {
-    text-decoration: none;
-    color: #003cff;
+  text-decoration: none;
+  color: #003cff;
 }
 
 div.text-info a:hover {
-    text-decoration: underline;
-    color: #4671ff;
+  text-decoration: underline;
+  color: #4671ff;
+}
+
+h3.text-info-h3-phone {
+    display: none;
 }
 
 /* main content section information on phone */
 @media screen and (max-width: 768px) {
-    div.main-content-info {
-        display: none;
-        border-bottom: none;
-    }
+  div.main-content-info {
+    display: none;
+    border-bottom: none;
+  }
 
-    div.card-content-info {
-        padding: 0;
-        margin-bottom: 0;
-    }
+  h3.text-info-h3-windows {
+    display: none;
+  }
 
-    div.card-info {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 16px;
-        border-bottom: none;
-    }
+  h3.text-info-h3-phone {
+    display: block;
+}
 
-    div.card-content-info {
-        width: 100%;
-        border-bottom: 1.5px solid #dfdede;
-    }
+  div.card-content-info {
+    padding: 0;
+    margin-bottom: 0;
+  }
 
-    div.card-info img.on-windows {
-        display: none;
-    }
+  div.text-info p {
+    display: block;
+  }
 
-    div.card-info img.on-phone {
-        display: block;
-        width: 100%;
-    }
+  div.card-info {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    border-bottom: none;
+  }
 
-    div.card-info div.text-info {
-        padding-top: 16px;
-        padding-left: 16px;
-    }
+  div.card-content-info {
+    width: 100%;
+    border-bottom: 1.5px solid #dfdede;
+  }
+
+  div.card-info img.on-windows {
+    display: none;
+  }
+
+  div.card-info img.on-phone {
+    display: block;
+    width: 100%;
+  }
+
+  div.card-info div.text-info {
+    padding-top: 16px;
+    padding-left: 16px;
+  }
+
+  div.card-content-info {
+    padding-bottom: 32px;
+  }
 }
 
 /* main content section course on windows */
 section.course {
-    display: flex;
-    flex-direction: column;
-    background-color: #dfdede;
+  display: flex;
+  flex-direction: column;
+  background-color: #dfdede;
+  padding-bottom: 32px;
 }
 
 section.course h2 {
-    padding: 32px;
-    font-weight: bold;
-    font-size: 48px;
-    text-align: center;
+  padding: 32px;
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
 }
 
 div.box-card {
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-    padding: 0 72px 32px 72px;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding: 0 72px 32px 72px;
+  width: 100%;
 }
 
 div.card-course img {
-    width: 100%;
+  width: 100%;
 }
 
 div.card-course {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 div.card-course:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 div.course-des {
-    padding: 16px 16px 24px 16px;
+  padding: 16px 16px 24px 16px;
 }
 
-div.course-des h3, p {
-    margin-bottom: 8px;
+div.course-des h3,
+p.course-text {
+  margin-bottom: 8px;
 }
 
 div.course-des p {
-    font-size: 18px;
-    color: #8a8a8a;
+  font-size: 18px;
+  color: #8a8a8a;
 }
 
 div.course-des p.course-text {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 div.course-des h3 {
-    font-size: 28px;
-    color: #2e2e2e;
+  font-size: 28px;
+  color: #2e2e2e;
 }
 
 /* main content section course on phone */
-@media screen and (max-width: 768px) { 
-    section.course {
-        display: flex;
-        flex-direction: column;
-        background-color: #ffffff;
-        margin-bottom: 32px;
-    }
+@media screen and (max-width: 768px) {
+  section.course {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 0 8px 32px 8px;
+  }
 
-    section.course h2 {
-        padding: 32px 0 16px 0;
-    }
+  section.course h2 {
+    padding: 32px 0 16px 0;
+  }
 
-    div.card-course {
-        background-color: #dfdede;
-        margin: 4px 8px;
-    }
+  div.card-course {
+    background-color: #dfdede;
+    margin: 4px 8px;
+  }
 
-    div.card-course img {
-        display: none;
-    }
+  div.card-course img {
+    display: none;
+  }
 
-    div.course-des p {
-        display: none;
-    }
+  div.course-des p {
+    display: none;
+  }
 
-    div.course-des h3 {
-        padding: 16px 16px 24px 16px;
-    }
+  div.course-des h3 {
+    padding: 16px 16px 24px 16px;
+  }
 
-    div.box-card {
-        flex-direction: column;
-        padding: 0px;
-        gap: 0;
-        width: 100%;
-    }
+  div.box-card {
+    flex-direction: column;
+    padding: 0px;
+    gap: 0;
+    width: 100%;
+  }
 
-    div.course-des {
-        padding: 0;
-    }
+  div.course-des {
+    padding: 0;
+  }
+
 }
 
 /* main content section thesis on windows */
 section.thesis {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 1.5px solid #dfdede;
 }
 
 section.thesis header {
-    padding: 32px;
-    text-align: center;
-    font-size: 38px;
+  padding: 32px;
+  text-align: center;
+  font-size: 38px;
 }
 
 div.body-thesis {
-    display: flex;
+  display: flex;
 }
 
 div.thesis-main {
-    width: 60%;
-    padding: 0 24px 32px 24px;
+  width: 60%;
+  padding: 0 24px 32px 24px;
 }
 
 div.thesis-main video {
-    width: 100%;
+  width: 100%;
 }
 
 div.thesis-main h2 {
-    margin-top: 24px;
-    font-size: 34px;
-    color: #595959;
+  margin-top: 24px;
+  font-size: 34px;
+  color: #595959;
 }
 
 div.thesis-main p {
-    margin-top: 8px;
-    font-size: 18px;
-    color: #929292;
+  margin-top: 8px;
+  font-size: 18px;
+  color: #929292;
 }
 
 div.card-thesis-content {
-    display: flex;
-    flex-direction: column;
-    width: 40%; 
+  display: flex;
+  flex-direction: column;
+  width: 40%;
 }
 
 div.thesis-card {
-    display: flex;
-    align-items: center;
-    padding: 16px;
+  display: flex;
+  align-items: center;
+  padding: 16px;
 }
 
 div.thesis-card img {
-    width: 35%;
+  width: 35%;
 }
 
 div.text-thesis {
-    padding-left: 16px;
+  padding-left: 16px;
 }
 
 div.text-thesis h3 {
-    font-size: 26px;
+  font-size: 26px;
+  margin-bottom: 16px;
 }
 
 div.text-thesis p {
-    font-size: 22px;
-    color: #929292;
+  font-size: 22px;
+  color: #929292;
 }
 
 div.thesis-card:hover {
-    background-color: #dfdede;
-    cursor: pointer;
+  background-color: #dfdede;
+  cursor: pointer;
 }
 
 /* main content section thesis on phone */
 @media screen and (max-width: 768px) {
-    section.thesis header {
-        padding: 32px 0 16px 0;
-        text-align: center;
-        font-size: 38px;
-        border-top: 1.5px solid #dfdede;
-    }
+  section.thesis header {
+    padding: 32px 0 16px 0;
+    text-align: center;
+    font-size: 38px;
+    border-top: 1.5px solid #dfdede;
+  }
 
-    div.thesis-main h2, p {
-        display: none;
-    }
+  section.thesis {
+    border-bottom: none;
+  }
 
-    div.thesis-main {
-        width: 100%;
-        padding: 0;
-    }
+  div.thesis-main h2,
+  p {
+    display: none;
+  }
 
-    div.thesis-main video {
-        width: 100%;
-        padding: 16px 0 24px 0;
-    }
+  div.thesis-main {
+    width: 100%;
+    padding: 0;
+  }
 
-    div.card-thesis-content {
-        display: none;
-    }
+  div.thesis-main video {
+    width: 100%;
+    padding: 16px 0 24px 0;
+  }
+
+  div.card-thesis-content {
+    display: none;
+  }
+}
+
+/* footer on windows */
+footer div.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px 24px 48px 24px;
+}
+
+div.footer p {
+  color: #929292;
+}
+
+div.footer ul {
+  display: flex;
+  gap: 16px;
+}
+
+div.footer ul li {
+  list-style: none;
+}
+
+div.footer ul li a {
+  text-decoration: none;
+  color: #929292;
+}
+
+/* footer on phone */
+@media screen and (max-width: 768px) {
+  div.footer ul {
+    display: none;
+  }
+
+  footer div.footer {
+    display: block;
+    padding: 16px;
+  }
+
+  div.footer p {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+
 }
